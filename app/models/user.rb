@@ -1,3 +1,4 @@
 class User < ActiveRecord::Base
-has many :games
+has_many :games
+has_many :favorites, through: :games
 end
