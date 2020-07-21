@@ -4,12 +4,30 @@
     <title>VGJudge</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <div class = "vg_border">
+    <ul>
+      <% if !current_user %>
+        <h1 class = "vg_name">VG Judge</h1>
+        <li class = "navbar">
+        <%= link_to("Sign Up", new_user_path, :class => 'a-bar')%>
+        <%= link_to("Log In", new_session_path, :class => 'a-bar') %>
+        <%= link_to("Log In with GitHub", '/auth/github', :class => 'a-bar')%>
+        </li>
+      <% else %>
+        <li class = "navbar_newgr"><%= link_to("New Game Review", new_user_game_path(current_user), :class => 'a-bar') %></li>
+        <li class = "navbar_newgr"><%= link_to("Most Reviews", most_users_path, :class => 'a-bar2') %></li>
+        <li class = "navbar_reviews"><%= link_to("Game Reviews", games_path, :class => 'a-bar')%></li>
+        <li class = "navbar_home"><%= link_to("Home", user_path(current_user), :class => 'a-bar')%></li>
+        <li class = "navbar_logout"><%= link_to("Log Out", logout_path(current_user), method: :delete, :class => 'a-bar')%></li>
+      <% end %>
+    </ul>
+  </div>
+
   <body>
-    <%= yield %>
+    <%= yield %>   
   </body>
+  
 </html>
