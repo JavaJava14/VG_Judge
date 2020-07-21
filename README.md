@@ -1,24 +1,23 @@
-# README
+# VG_Judge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+VG_Judge consist of threads filled with reviews on games. This app is built with Rails and ActiveRecord. Once a user creates an account, they are able to access their account where they can post, edit or delete their own Reviews.
 
-Things you may want to cover:
+## Usage & Development
 
-* Ruby version
+Clone this repository to your computer and run the following commands:
 
-* System dependencies
+ ```
+bundle install
+rake db:migrate
+rake db:seed
+rails s
+```
+Then navigate to localhost:3000 in your browser to see it in action.
 
-* Configuration
+## Contributing
 
-* Database creation
+Bug reports and pull requests are welcome on GitHub at https://github.com/JavaJava14/VG_Judge. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-* Database initialization
+## License
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This software is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
