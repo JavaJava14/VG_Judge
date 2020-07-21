@@ -1,6 +1,6 @@
 # VG_Judge
 
-VG_Judge consist of threads filled with reviews on games. This app is built with Rails and ActiveRecord. Once a user creates an account, they are able to access their account where they can post, edit or delete their own Reviews.
+VG_Judge consist of threads filled with reviews on games. This app is built with Rails and ActiveRecord. Once a user creates an account, they are able to access their home page where they can post, edit or delete their own Reviews.
 
 ## Usage & Development
 
