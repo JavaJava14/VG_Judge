@@ -1,0 +1,5 @@
+<ul class = "list">
+<li><%= link_to(@game.title, game_path(@game), :class => "a-list")%>
+    <%= link_to("Edit", edit_game_path(@game), :class => "a-list2")%></li>
+    <%= button_to("Delete", game_path(@game),:method => :delete, :class => "a-list3" ) %></li>
+</ul>
