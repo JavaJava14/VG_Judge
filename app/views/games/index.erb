@@ -1,0 +1,28 @@
+<% if logged_in? %>
+<table class = "gameTable">
+<thead>
+  <tr>
+    <th>Game name</th>
+    <th>User</th>
+    <th>Rating</th>
+    <th>Summary</th>
+  </tr>
+</thead>
+
+<tbody>
+  <tr>
+    <% @games.each do |game|  %>
+    <td><%= link_to game.title, game_path(game), class: "new-a" %></td>
+    <td><%= link_to game.user.username, user_games_path(game.user) %></td> 
+    <td><%= game.review.rating%></td>
+    <td><%= game.review.summary%></td>]
+  </tr>
+    <% end %>
+</tbody>
+</table>
+<%= form_tag("/games", method: "get") do %>
+<%= label_tag(:title, "Search game by title", :class => 'search_game') %>
+  <%= text_field_tag(:title) %>
+  <%= submit_tag("Search") %>
+<% end %>
+<% end %>

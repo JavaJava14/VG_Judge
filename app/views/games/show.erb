@@ -1,0 +1,14 @@
+<% if logged_in? %>
+  <div class = gr>
+  <h1>Game Review</h1>
+  <p><%= @game.title %></p> 
+  <p><%= @game.developer %></p> 
+  <p><%= @game.year %></p>
+  <% @game.genres.each do |genre| %>
+    <%= genre.name %>
+  <% end %>
+  <p><%= @game.review.summary %></p>
+  <p><%= @game.review.opinion %></p>
+  <p><%= @game.review.rating %></p>
+  </div>
+<% end %>
