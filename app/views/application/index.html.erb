@@ -1,0 +1,7 @@
+<% if !logged_in?%>
+  <div class = "vg">
+  Register to start reviewing games
+  </div>
+<% else %>
+  <%= render 'users/show' %>
+<% end %>
