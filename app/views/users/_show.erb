@@ -1,0 +1,13 @@
+<div>
+<% if current_user %> 
+  <h1 class = "welcome_user">Welcome <%= @user.username %> </h1>
+<% end %>
+<div>
+<% Game.all.each do |game| %> 
+  <% @game = game %>
+  <% if current_user == game.user %>
+    <%= render 'games/show' %>
+  <% end %>
+<% end %>
+</div>
+</div>
