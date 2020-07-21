@@ -1,0 +1,43 @@
+<% if current_user %>
+  <h1 class = 'new_game'>Review Game</h1>
+  <%= form_for(@game) do |f| %>
+    <div class = "fields_with_errors2"><%= render 'error'%></div>
+    <div>
+    <ul>
+      <li>
+        <%= f.label :title, :class => 'label_new_game' %>
+        <%= f.text_field :title, :class => 'field_new_game' %>
+      </li>
+      <li>
+        <%= f.label :developer, :class => 'label_new_game2' %>
+        <%= f.text_field :developer, :class => 'field_new_game2' %>
+      </li>
+        <%= f.label :year, :class => 'label_new_game3' %>
+        <%= f.date_field :year,min: Date.new(1980, 01, 01), max: Date.today, :class => 'field_new_game3' %> 
+    </ul>
+  </div>
+  <div>
+  <ul>
+    <li class = "field_new_game4">
+      <%= f.label :genre, :class => 'label_new_game4'%>
+      <%= f.collection_select :genre_ids, Genre.all, :id, :name, prompt:true%>
+    </li>
+      <%= f.fields_for :review do |r|%>
+    <li>
+      <%= r.label :summary, :class => 'label_new_game5' %>
+      <%= r.text_field :summary, :class => 'field_new_game5' %>
+    </li>
+    <li>
+      <%= r.label :opinion, :class => 'opinion'%>
+      <%= r.text_area :opinion, :class => 'field_new_game6' %>
+    </li>
+    <li>
+      <%= r.label :rating, :class => 'label_new_game7' %>
+      <%= r.number_field :rating, min: 1, max:10, :class => 'field_new_game7' %>
+      <% end %>
+      <%= f.submit 'submit', :class => 'submit_new_game'%>
+    </li>
+  </ul>
+  </div>
+  <% end %>
+<% end %>
