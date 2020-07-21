@@ -13,3 +13,404 @@
  *= require_tree .
  *= require_self
  */
+
+/*label {
+  text-align: center;
+}*/
+
+input {
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-image: url(../images/VG.png);
+}
+
+.label_signup{
+  position: fixed;
+  left: 825px;
+  top: 300px;
+  color: rgb(255, 255, 255);
+}
+
+.field_signup {
+  position: fixed;
+  top: 250px;
+  right: 775px;
+}
+
+.label_signup2{
+  position: fixed;
+  left: 825px;
+  top: 375px;
+  color: rgb(255, 255, 255);
+}
+
+.field_signup2 {
+  position: fixed;
+  top: 325px;
+  right: 775px;
+}
+
+.submit_signup {
+  position: fixed;
+  top: 400px;
+  right: 850px;
+}
+
+.session_login {
+  color: rgb(255, 255, 255);
+  position: relative;
+  margin-right: 50px;
+  left: 700px;
+}
+.login {
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-align: center;
+  margin-left: 0px;
+}
+
+.new_game{
+  color: rgb(255, 255, 255);
+  position: fixed;
+  left: 900px;
+}
+.label_new_game{ 
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 250px;
+  left: 600px;
+}
+
+.field_new_game{
+  position: fixed;
+  top: 200px;
+  left: 650px;
+}
+
+.label_new_game2{ 
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 250px;
+  left: 860px;
+}
+
+.field_new_game2{
+  position: fixed;
+  top: 200px;
+  left: 950px;
+}
+
+.label_new_game3{ 
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 250px;
+  left: 1150px;
+}
+
+.field_new_game3{
+  position: fixed;
+  top: 200px;
+  left: 1200px;
+}
+
+.label_new_game4{ 
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 350px;
+  left: 600px;
+}
+
+.field_new_game4{
+  position: fixed;
+  top: 350px;
+  left: 675px;
+}
+
+.label_new_game5{ 
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 350px;
+  left: 800px;
+}
+
+.field_new_game5{
+  position: fixed;
+  top: 300px;
+  left: 875px;
+}
+
+.opinion{
+  color: rgb(255, 255, 255);
+  position:fixed;
+  left: 1075px;
+  top: 350px;
+}
+
+.field_new_game6{
+  position: fixed;
+  top: 350px;
+  left: 1150px;
+}
+
+.label_new_game7{ 
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 450px;
+  left: 600px;
+}
+
+.field_new_game7{
+  position: fixed;
+  top: 400px;
+  left: 675px;
+}
+.submit_new_game{
+  position: fixed;
+  top: 400px;
+  left: 775px;
+}
+
+.fields_with_errors {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative; 
+}
+
+.fields_with_errors2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: fixed; 
+  bottom: 250px;
+}
+
+.search_game{
+  color: rgb(255, 255, 255);
+}
+
+.most_reviews {
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 200px;
+  left: 100px;
+}
+
+.a-bar {
+  color: rgb(196, 159, 255);
+  border: rgb(255, 255, 255) 1px solid;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 20px;
+}
+.a-bar2 {
+  color: rgb(196, 159, 255);
+  border: rgb(255, 255, 255) 1px solid;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  left: 380px;
+  position: relative;
+}
+
+.a-list {
+  color: rgb(196, 159, 255);
+  border: rgb(255, 255, 255) 1px solid;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 60px;
+  top: 50px;
+  position: relative;
+}
+
+.a-list2 {
+  color: rgb(196, 159, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 60px;
+  top: 50px;
+  position: relative;
+}
+.a-list3 {
+  color: rgb(0, 0, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 300px;
+  top: -20px;
+  position: relative;
+}
+
+
+.list {
+  padding-top: 20px;
+}
+
+.navbar {
+  text-align: Right;
+  white-space: nowrap;
+  position: relative;
+  bottom: 30px;
+}
+
+.navbar_home {
+  position: fixed;
+  top: 50px;
+}
+
+.navbar_logout {
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  margin-right: 30px;
+}
+
+.navbar_reviews{
+  position: fixed;
+  top: 50px;
+  left: 340px;
+  margin-right: 30px;
+}
+
+.navbar_newgr {
+  position: fixed;
+  top: 50px;
+  left: 150px;
+}
+
+.vg_name {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  position: relative;
+  top: 15px;
+}
+
+.vg_border {
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.vg { 
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+}
+
+.welcome_user {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+}
+.gr {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 25px;
+}
+
+.userlist {
+  position: relative;
+  padding-top: 60px;
+  left: 40px;
+}
+
+.form {
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 70px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+  margin-left: 650px;
+  margin-right: 650px;
+}
+
+.register {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 15px;
+}
+
+.session_error {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+}
+
+table.gameTable {
+  background-color: rgb(255, 255, 255);
+  border-collapse: separate;
+  position: relative;
+  width: 50%;
+  text-align: left;
+  margin-top: 150px;
+}
+
+.new-a {
+  color: rgb(0, 0, 0);
+}
+
+.new_game_review {
+  color: rgb(255, 255, 255);
+  position: fixed;
+  left: 500px;
+}
+.new_game_review2 {
+  color: rgb(255, 255, 255);
+  position: fixed;
+  left: 500px;
+  top: 180px;
+}
+
+.rating {
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 175px;
+  right: 350px;
+}
+
+textarea {
+  position: fixed;
+  width: 300px;
+  height: 150px;
+  top: 225px;
+  left: 975px;
+}
+
+.edit_game {
+  color: rgb(255, 255, 255);
+}
+
+
+
+
