@@ -1,0 +1,20 @@
+<div class = "register">
+<h1>CREATE AN ACCOUNT</h1>
+</div>
+  <%= form_for @user, controller: 'users', action: 'create' do |f| %>
+  <div class = "fields_with_errors"><%= render 'login_error'%></div>
+  <div>
+    <ul>
+     <li> 
+      <%= f.label :username, :class => "label_signup"%>
+      <%= f.text_field :username, :class => "field_signup" %>
+     </li>
+     <li>
+      <%= f.label :password, :class => "label_signup2" %>
+      <%= f.text_field :password, :class => "field_signup2" %>
+     </li>
+    </ul>
+      <%= f.submit "Sign Up", :class => 'submit_signup' %>
+  </div>
+  <% end %>
+</div>
