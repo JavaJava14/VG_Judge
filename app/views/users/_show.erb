@@ -1,7 +1,5 @@
 <div>
-<% if current_user %> 
   <h1 class = "welcome_user">Welcome <%= current_user.username %> </h1>
-<% end %>
 <div>
 <% Game.all.each do |game| %> 
   <% @game = game %>

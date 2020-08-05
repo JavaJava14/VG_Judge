@@ -1,6 +1,6 @@
 class UsersController <  ApplicationController
   before_action :current_user, only: [:show]
-  before_action :require_login, only: [:show]
+  before_action :require_login, only: [:show, :most_users]
 
   def new
     if !current_user
@@ -25,7 +25,7 @@ class UsersController <  ApplicationController
   end
 
   def most_users
-    @users = User.joins(:games).group(:id).order('COUNT(games.id) DESC').limit(1)
+    @users = User.most_reviews
   end
 
   private

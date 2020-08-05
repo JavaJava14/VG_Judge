@@ -1,7 +1,5 @@
-<% if logged_in? %>
   <% if current_user == @game.user %>
     <%= render 'form' %>
   <% else %>
     <%= render '/users/show' %>
   <% end %>
-<% end %>

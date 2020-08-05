@@ -1,8 +1,6 @@
-<% if logged_in? %>
   <div class = 'most_reviews'>
   <% @users.each do |user|  %>
     <p><%= user.username %></p>
     <p>Number of games reviewed: <%= user.games.count %></p>
   <% end %>
   </div>
-<% end %>
