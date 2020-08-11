@@ -1,5 +1,4 @@
 class UsersController <  ApplicationController
-  before_action :current_user, only: [:show]
   before_action :require_login, only: [:show, :most_users]
 
   def new
@@ -21,7 +20,7 @@ class UsersController <  ApplicationController
   end
 
   def show
-    @game = Game.all
+    
   end
 
   def most_users
